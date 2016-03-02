@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/es.kybele.elastic.models.serviceblueprint/model/serviceblueprint.genmodel
+gmf_dashboard/domainModel=platform\:/resource/es.kybele.elastic.models.serviceblueprint/model/serviceblueprint.ecore
+gmf_dashboard/generationModel=platform\:/resource/es.kybele.elastic.models.serviceblueprint/model/serviceblueprint.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/es.kybele.elastic.models.serviceblueprint/model/serviceblueprint.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/es.kybele.elastic.models.serviceblueprint/model/serviceblueprint.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/es.kybele.elastic.models.serviceblueprint/model/serviceblueprint.gmftool

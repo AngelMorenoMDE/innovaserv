@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:TraceModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:trace="http://www.eclipse.org/gmf/2006/Trace">
+  <nodeTraces
+      visualID="2001"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintDiagram') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintModel') and _containmentMF_.name = 'hasServiceBlueprintDiagram')">
+    <compartmentTraces
+        visualID="7001"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7002"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7003"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7004"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7005"
+        queryText="true"/>
+  </nodeTraces>
+  <childNodeTraces
+      visualID="3001"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'PhysicalEvidence') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintDiagram') and _containmentMF_.name = 'hasPhysicalEvidences')"/>
+  <childNodeTraces
+      visualID="3002"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'CustomerAction') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintDiagram') and _containmentMF_.name = 'hasCustomerActions')"/>
+  <childNodeTraces
+      visualID="3003"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'OnStageEmployeeAction') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintDiagram') and _containmentMF_.name = 'hasOnStageEmployeeActions')"/>
+  <childNodeTraces
+      visualID="3004"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'BackStageEmployeeAction') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintDiagram') and _containmentMF_.name = 'hasBackStageEmployeeActions')"/>
+  <childNodeTraces
+      visualID="3005"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'SupportProcess') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintDiagram') and _containmentMF_.name = 'hasSupportProcesses')"/>
+  <linkTraces
+      visualID="4001"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1' and _eClass_.name = 'ServiceBlueprintConnection')"/>
+</trace:TraceModel>

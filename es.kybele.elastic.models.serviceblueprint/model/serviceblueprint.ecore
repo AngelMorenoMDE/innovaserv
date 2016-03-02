@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="serviceblueprint" nsURI="http://www.kybele.es/projects/elastic/models/serviceblueprint/0.1"
+    nsPrefix="serviceblueprint">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceBlueprintModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasServiceBlueprintDiagram"
+        lowerBound="1" eType="#//ServiceBlueprintDiagram" containment="true" eOpposite="#//ServiceBlueprintDiagram/inServiceBlueprintModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasServiceBlueprintConnection"
+        upperBound="-1" eType="#//ServiceBlueprintConnection" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceBlueprintConnection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceServiceBlueprintNode"
+        lowerBound="1" eType="#//ServiceBlueprintNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetServiceBlueprintNode"
+        lowerBound="1" eType="#//ServiceBlueprintNode"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceBlueprintDiagram">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inServiceBlueprintModel"
+        eType="#//ServiceBlueprintModel" eOpposite="#//ServiceBlueprintModel/hasServiceBlueprintDiagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasPhysicalEvidences" upperBound="-1"
+        eType="#//PhysicalEvidence" containment="true" eOpposite="#//PhysicalEvidence/inServiceBlueprintModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasCustomerActions" upperBound="-1"
+        eType="#//CustomerAction" containment="true" eOpposite="#//CustomerAction/inServiceBlueprintModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasOnStageEmployeeActions"
+        upperBound="-1" eType="#//OnStageEmployeeAction" containment="true" eOpposite="#//OnStageEmployeeAction/inServiceBlueprintModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasBackStageEmployeeActions"
+        upperBound="-1" eType="#//BackStageEmployeeAction" containment="true" eOpposite="#//BackStageEmployeeAction/inServiceBlueprintModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSupportProcesses" upperBound="-1"
+        eType="#//SupportProcess" containment="true" eOpposite="#//SupportProcess/inServiceBlueprintModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceBlueprintNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalEvidence" eSuperTypes="#//ServiceBlueprintNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inServiceBlueprintModel"
+        eType="#//ServiceBlueprintDiagram" eOpposite="#//ServiceBlueprintDiagram/hasPhysicalEvidences"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerAction" eSuperTypes="#//ServiceBlueprintNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inServiceBlueprintModel"
+        eType="#//ServiceBlueprintDiagram" eOpposite="#//ServiceBlueprintDiagram/hasCustomerActions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OnStageEmployeeAction" eSuperTypes="#//ServiceBlueprintNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inServiceBlueprintModel"
+        eType="#//ServiceBlueprintDiagram" eOpposite="#//ServiceBlueprintDiagram/hasOnStageEmployeeActions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BackStageEmployeeAction" eSuperTypes="#//ServiceBlueprintNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inServiceBlueprintModel"
+        eType="#//ServiceBlueprintDiagram" eOpposite="#//ServiceBlueprintDiagram/hasBackStageEmployeeActions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SupportProcess" eSuperTypes="#//ServiceBlueprintNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inServiceBlueprintModel"
+        eType="#//ServiceBlueprintDiagram" eOpposite="#//ServiceBlueprintDiagram/hasSupportProcesses"/>
+  </eClassifiers>
+</ecore:EPackage>

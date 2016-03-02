@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/es.kybele.elastic.models.serviceblueprint.features_0.0.1.a.jar" id="es.kybele.elastic.models.serviceblueprint.features" version="0.0.1.a">
+      <category name="es.kybele.elastic.models.serviceblueprint.updatesite.main_category"/>
+   </feature>
+   <category-def name="es.kybele.elastic.models.serviceblueprint.updatesite.main_category" label="INNoVaServ Toolkit Service Blueprint Business Model"/>
+</site>

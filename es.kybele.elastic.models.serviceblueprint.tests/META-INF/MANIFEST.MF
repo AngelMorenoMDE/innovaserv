@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: INNoVaServ Toolkit Service Blueprint Business Model - Tests Plug-In
+Bundle-SymbolicName: es.kybele.elastic.models.serviceblueprint.tests;singleton:=true
+Bundle-Version: 0.0.1.a
+Bundle-ClassPath: .
+Bundle-Vendor: Grupo de Investigación Kybele
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: serviceblueprint.tests
+Require-Bundle: org.eclipse.core.runtime,
+ es.kybele.elastic.models.serviceblueprint;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.junit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

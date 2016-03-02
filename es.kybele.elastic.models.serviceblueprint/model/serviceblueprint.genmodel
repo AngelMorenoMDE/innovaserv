@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/es.kybele.elastic.models.serviceblueprint/src"
+    modelPluginID="es.kybele.elastic.models.serviceblueprint" modelName="Serviceblueprint"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>serviceblueprint.ecore</foreignModel>
+  <genPackages prefix="Serviceblueprint" disposableProviderFactory="true" ecorePackage="serviceblueprint.ecore#/">
+    <genClasses ecoreClass="serviceblueprint.ecore#//ServiceBlueprintModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintModel/hasServiceBlueprintDiagram"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintModel/hasServiceBlueprintConnection"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//ServiceBlueprintConnection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintConnection/sourceServiceBlueprintNode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintConnection/targetServiceBlueprintNode"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//ServiceBlueprintDiagram">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintDiagram/inServiceBlueprintModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintDiagram/hasPhysicalEvidences"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintDiagram/hasCustomerActions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintDiagram/hasOnStageEmployeeActions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintDiagram/hasBackStageEmployeeActions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference serviceblueprint.ecore#//ServiceBlueprintDiagram/hasSupportProcesses"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//ServiceBlueprintNode"/>
+    <genClasses ecoreClass="serviceblueprint.ecore#//PhysicalEvidence">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute serviceblueprint.ecore#//PhysicalEvidence/content"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference serviceblueprint.ecore#//PhysicalEvidence/inServiceBlueprintModel"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//CustomerAction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute serviceblueprint.ecore#//CustomerAction/content"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference serviceblueprint.ecore#//CustomerAction/inServiceBlueprintModel"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//OnStageEmployeeAction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute serviceblueprint.ecore#//OnStageEmployeeAction/content"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference serviceblueprint.ecore#//OnStageEmployeeAction/inServiceBlueprintModel"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//BackStageEmployeeAction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute serviceblueprint.ecore#//BackStageEmployeeAction/content"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference serviceblueprint.ecore#//BackStageEmployeeAction/inServiceBlueprintModel"/>
+    </genClasses>
+    <genClasses ecoreClass="serviceblueprint.ecore#//SupportProcess">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute serviceblueprint.ecore#//SupportProcess/content"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference serviceblueprint.ecore#//SupportProcess/inServiceBlueprintModel"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
